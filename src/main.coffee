@@ -2,9 +2,9 @@
 # Copyright 2016 9165584 Canada Corporation <legal@fuzzy.io>
 # All rights reserved.
 
-HostnamerServer = require './hostnamer-server'
+HostnamerClientServer = require './hostnamer-client-server'
 
-server = new HostnamerServer(process.env)
+server = new HostnamerClientServer(process.env)
 
 server.start (err) ->
   if err

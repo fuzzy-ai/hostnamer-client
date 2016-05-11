@@ -1,8 +1,8 @@
 {
-  "name": "hostnamer",
+  "name": "hostnamer-client",
   "version": "0.1.0",
   "description": "test microservice",
-  "repository": "https://github.com/fuzzy-io/hostnamer.git",
+  "repository": "https://github.com/fuzzy-io/hostnamer-client.git",
   "scripts": {
     "build": "cake build",
     "clean": "cake clean",
@@ -13,6 +13,7 @@
     "databank": "^0.19.1",
     "databank-mongodb": "^0.18.10",
     "fuzzy.io-microservice": "^0.8.0",
+    "fuzzy.io-microservice-client": "^0.2.4",
     "lodash": "^4.5.1",
     "moment": "^2.13.0",
     "request": "^2.69.0",

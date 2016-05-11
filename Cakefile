@@ -6,7 +6,7 @@ fs = require "fs"
 glob = require "glob"
 _ = require 'lodash'
 
-DOCKER = "fuzzyio/hostnamer"
+DOCKER = "fuzzyio/hostnamer-client"
 
 cmd = (str, env, callback) ->
   if _.isFunction(env)
