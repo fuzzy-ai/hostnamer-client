@@ -1,0 +1,26 @@
+{
+  "name": "hostnamer",
+  "version": "0.1.0",
+  "description": "test microservice",
+  "repository": "https://github.com/fuzzy-io/hostnamer.git",
+  "scripts": {
+    "build": "cake build",
+    "clean": "cake clean",
+    "start": "coffee src/main.coffee"
+  },
+  "dependencies": {
+    "async": "^1.5.2",
+    "databank": "^0.19.1",
+    "databank-mongodb": "^0.18.10",
+    "fuzzy.io-microservice": "^0.8.0",
+    "lodash": "^4.5.1",
+    "moment": "^2.13.0",
+    "request": "^2.69.0",
+    "stripe": "^4.3.0"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "glob": "^7.0.3",
+    "vows": "^0.8.1"
+  }
+}
