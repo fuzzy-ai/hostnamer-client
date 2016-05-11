@@ -26,10 +26,14 @@ class HostnamerClientServer extends Microservice
     exp.get '/distribution', @appAuthc, @_reqHostnamerClient, @_getDistribution
     exp.get '/version', @_getVersion
 
-  _reqHostnamerClient: (req, res, next) ->
+  _reqHostnamerClient: (req, res, next) =>
     server = req.app.config.hostnamerServer
     key = req.app.config.hostnamerKey
     req.hostnamerClient = new HostnamerClient server, key
+    req.hostnamerClient.on 'error', (err) =>
+      @slackMessage "error", err.message, ":warning:", (err) ->
+        if err
+          req.log.error {err: err}, "Error during Slack message"
     next()
 
   _getDistribution: (req, res, next) ->
