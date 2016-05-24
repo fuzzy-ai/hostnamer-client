@@ -1,6 +1,6 @@
 {
   "name": "hostnamer-client",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "test microservice",
   "repository": "https://github.com/fuzzy-io/hostnamer-client.git",
   "scripts": {
