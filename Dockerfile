@@ -1,4 +1,4 @@
-FROM node-6-onbuild
+FROM node:6-onbuild
 
 WORKDIR /src
 ADD . .
