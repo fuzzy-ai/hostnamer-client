@@ -9,6 +9,7 @@
     "start": "coffee src/main.coffee"
   },
   "dependencies": {
+    "@fuzzy-ai/microservice-client": "^1.0.4",
     "async": "^1.5.2",
     "databank": "^0.19.1",
     "databank-mongodb": "^0.19.0",
